@@ -36,27 +36,27 @@
 .Lineas__Citrica {
     background-color: $primary-color;
     border-radius: 15px;
-    padding: 3rem 3rem 3rem 130px;
+    padding: 3rem 3rem 3rem 8rem;
 }
 .Lineas__Clasica {
     border: 10px solid $primary-color;
     margin: 2rem 0rem;
     border-radius: 15px;
-    padding: 3rem 100px 3rem 3rem;
+    padding: 3rem 8rem 3rem 3rem;
     background-color: white;
 }
 
 .Lineas__Premium {
     background-color: $primary-color;
     border-radius: 15px;
-    padding: 3rem 3rem 3rem 130px;
+    padding: 3rem 3rem 3rem 8rem;
 }
 .Lineas img {
     border-radius: 20px;
     width: 60%;
 }
 .Productos {
-    background-image: url(../Imgs/ladrillos.jpg);
+    background-image: url(../Imag/ladrillos.jpg);
     padding: 60px 0px;
     text-align: center;
     border-bottom: 15px solid $primary-color;
@@ -136,4 +136,29 @@
 }
 .Lineas__Clasica{
     box-shadow: inset 0 0 15px #093637;
+}
+
+@media (max-width: 1000px) { 
+    .Lineas__Citrica, .Lineas__Clasica, .Lineas__Premium {
+    padding: 3rem;
+}
+    .Lineas img {
+        width: 100%;
+    }
+    .Lineas__Citrica p, .Lineas__Premium p {
+        padding-bottom: 2rem;
+    }
+    .Lineas__Clasica h3 {
+        padding-top: 2rem;
+    }
+    .Botanicos h2, .Productos h2, .Tragos h2 {
+        font-size: 60px;
+    }
+    .Header__Logo {
+        padding: 0;
+        width: auto;
+    }
+    Header__NavLinks {
+        padding: 0;
+    }
 }

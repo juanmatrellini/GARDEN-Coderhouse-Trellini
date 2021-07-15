@@ -203,3 +203,13 @@
     font-size: 50px;
     color: #093637;
 }
+
+@media (max-width: 1000px) {
+    .Recetas__Gin, .Recetas__Negroni, .Recetas__Vermu, .Recetas__Vodka {
+        margin: 0;
+    }
+    .Recetas__Gin h3, .Recetas__Gin_Ing, .Recetas__Gin_Texto, .Recetas__Negroni h3, .Recetas__Vermu h3, .Recetas__Vodka h3, .Recetas__Negroni_Ing, .Recetas__Negroni_Texto, .Recetas__Vermu_Ing, .Recetas__Vermu_Texto, .Recetas__Vodka_Ing, .Recetas__Vodka_Texto {
+        text-align: center;
+        padding: 1rem 1rem;
+    }
+}
