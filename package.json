@@ -1,0 +1,20 @@
+{
+  "name": "garden-coder-trellini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "JuanmaSass": "sass --watch Scss/Style.scss Css/Style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanmatrellini/GARDEN-Coderhouse-Trellini.git"
+  },
+  "author": "JuanmaTrellini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanmatrellini/GARDEN-Coderhouse-Trellini/issues"
+  },
+  "homepage": "https://github.com/juanmatrellini/GARDEN-Coderhouse-Trellini#readme"
+}
