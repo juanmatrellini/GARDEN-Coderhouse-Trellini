@@ -1,0 +1,775 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.botanicos-icon {
+  Background-image: url("../Imag/botanicos.jpg");
+}
+
+.productos-icon {
+  Background-image: url("../Imag/productos.jpg");
+}
+
+.cocktails-icon {
+  Background-image: url("../Imag/cocktails.jpg");
+}
+
+.Footer {
+  padding: 5px 0px;
+  background-color: #87b093;
+  color: white;
+}
+
+.Footer__Data, .Footer__Creator {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.Footer__Redes {
+  font-size: 35px;
+  font-weight: 500px;
+  color: #1b272b;
+}
+
+.Footer {
+  color: #1b272b;
+}
+
+.Footer__Redes span {
+  color: #1b272b;
+  font-size: 50px;
+  padding: 1rem 2rem;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  background-color: #87b090;
+  padding: 2rem 2rem;
+}
+
+.Header__logo {
+  padding-left: 100px;
+  width: 55%;
+}
+
+.Header__Logo h1 {
+  color: #1b272b;
+  font-weight: bold;
+  margin: auto;
+  font-size: 60px;
+}
+
+.Header__LogoLink {
+  text-decoration: none;
+  color: #1b272b;
+}
+
+.Header__NavLinks {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-right: 100px;
+  margin: auto;
+}
+
+.Header__Link {
+  text-decoration: none;
+  color: white;
+}
+
+.Header__LogoLink:hover {
+  color: #1b272b;
+}
+
+.Header__NavLinks li {
+  color: white;
+  font-size: 20px;
+  font-weight: 380;
+}
+
+nav {
+  flex: 3;
+}
+
+/*ANIMACION LOGO*/
+.Header__Logo {
+  animation-duration: 1.5s;
+  transform-origin: bottom;
+  animation-name: bounce-6;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce-6 {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+/*ANIMACION GLOBAL*/
+main {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.Cocktails__Portada h2,
+.Contacto__Portada h2,
+.NuestrosBotanicos__Portada h2,
+.NuestrosProductos__Portada h2 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+
+@keyframes bounce-1 {
+  0% {
+    transform: translateY(-250px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.Header__NavLinks {
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.Contacto {
+  text-align: center;
+  border-bottom: 15px solid #87B093;
+  margin-bottom: 1rem;
+}
+
+.Contacto__Portada {
+  height: 40vh;
+  background-blend-mode: soft-light;
+  background-color: #87B093;
+  border-bottom: 15px solid #87B093;
+}
+
+.Contacto__Portada h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: rgba(245, 237, 237, 0.76);
+  padding-top: 140px;
+}
+
+.Contacto__Fondo {
+  background-image: url(../Imag/ladrillos.jpg);
+  padding: 5rem;
+}
+
+.Contact__Label {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  color: #1b272b;
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  width: 60%;
+  height: 80%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 50px;
+  border-radius: 10px;
+}
+form h2 {
+  color: #1b272b;
+  font-size: 45px;
+}
+
+.input {
+  border: none;
+  resize: none;
+  outline: none;
+  padding: 15px 0px;
+  width: 80%;
+  margin: 20px;
+  transition: all 300ms;
+  border-bottom: 5px solid #1b272b;
+}
+
+.input:focus {
+  border-bottom-color: #87B093;
+}
+
+.button {
+  color: #1b272b;
+  border: none;
+  outline: none;
+  background-color: rgba(135, 176, 147, 0.715);
+  padding: 15px;
+  width: 200px;
+  margin: 20px;
+  transition: all 300ms;
+}
+
+.button:hover {
+  transform: scale(1.15);
+}
+
+.Cocktails {
+  text-align: center;
+  border-bottom: 15px solid #87B093;
+  padding-bottom: 3rem;
+}
+
+.Cocktails__Portada {
+  height: 40vh;
+  background-size: cover;
+  background-position-y: 34%;
+  background-blend-mode: soft-light;
+  background-color: #87B093;
+  border-bottom: 15px solid #87B093;
+}
+.Cocktails__Portada h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: rgba(245, 237, 237, 0.8);
+  padding-top: 140px;
+}
+
+.Cocktails__Texto {
+  margin-top: 3rem;
+}
+
+.Cocktails h3 {
+  color: #1b272b;
+  border-bottom: 2px solid #1b272b;
+  font-size: 45px;
+}
+
+.Cocktails h4 {
+  font-size: 28px;
+  font-weight: 400;
+  padding-top: 2rem;
+  color: #1b272b;
+}
+
+.NuestrosBotanicos p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1b272b;
+}
+
+.Cocktails__Foto {
+  padding: 3rem 1rem;
+}
+
+.Cocktails__Foto img {
+  width: 100% !important;
+}
+
+.Recetas {
+  background-image: url(../Imag/ladrillos.jpg);
+  padding: 60px 0px;
+  border-bottom: 15px solid #87B093;
+  margin-bottom: 1rem;
+}
+
+.Recetas h2 {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 70px;
+  font-weight: bold;
+  color: #1b272b;
+}
+
+.Recetas h3 {
+  font-size: 45px;
+}
+
+.Recetas p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.Recetas__Gin {
+  border: 10px double #1b272b;
+  background-color: rgba(135, 176, 147, 0.815);
+  margin: 2rem 5rem;
+  color: #1b272b;
+}
+
+.Recetas__Gin h3 {
+  padding: 3rem 6rem 0rem 6rem;
+  font-weight: bold;
+}
+
+.Recetas__Gin_Ing {
+  text-align: center;
+  padding: 3rem 2.5rem 2rem 2.5rem;
+}
+
+.Recetas__Gin_Texto {
+  text-align: center;
+  padding: 3rem 4rem;
+}
+
+.TIP p {
+  font-weight: 700;
+  padding-top: 2rem;
+  color: #1b272b;
+}
+
+.Recetas__Vodka {
+  border: 10px double #87B093;
+  background-color: rgba(241, 239, 239, 0.5);
+  margin: 7rem 5rem;
+  color: #1b272b;
+}
+
+.Recetas__Vodka h3 {
+  padding: 3rem 6rem 0rem 6rem;
+  font-weight: bold;
+}
+
+.Recetas__Vodka_Ing {
+  text-align: center;
+  padding: 3rem 2.5rem 3rem 2.5rem;
+}
+
+.Recetas__Vodka_Texto {
+  text-align: center;
+  padding: 3rem 4rem;
+}
+
+.Recetas__Negroni {
+  border: 10px double #87B093;
+  background-color: rgba(241, 239, 239, 0.5);
+  margin: 7rem 5rem;
+  color: #1b272b;
+}
+
+.Recetas__Negroni h3 {
+  padding: 3rem 6rem 0rem 6rem;
+  font-weight: bold;
+}
+
+.Recetas__Negroni_Ing {
+  text-align: center;
+  padding: 3rem 1rem 2rem 4rem;
+}
+
+.Recetas__Negroni_Texto {
+  text-align: center;
+  padding: 3rem 4rem;
+}
+
+.Recetas__Vermu {
+  border: 10px double #1b272b;
+  background-color: rgba(135, 176, 147, 0.815);
+  margin: 7rem 5rem;
+  color: #1b272b;
+}
+
+.Recetas__Vermu h3 {
+  padding: 3rem 6rem 0rem 6rem;
+  font-weight: bold;
+}
+
+.Recetas__Vermu_Ing {
+  text-align: center;
+  padding: 3rem 2.5rem 2rem 2.5rem;
+}
+
+.Recetas__Vermu_Texto {
+  text-align: center;
+  padding: 3rem 4rem;
+}
+
+/*prueba hoover*/
+.Cocktails_Animacion {
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 400ms ease;
+  margin: auto;
+}
+
+.Cocktails_Animacion:hover {
+  transform: translate(5px, -5px);
+  box-shadow: -10px 20px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.Cocktails_Animacion {
+  position: relative;
+  z-index: 1;
+  transition: all 400ms ease;
+}
+
+.Cocktails_Animacion .background-hover {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 250px;
+  left: -170px;
+  transition: all 400ms ease;
+  background-color: rgba(135, 176, 147, 0.5);
+}
+
+.Cocktails_Animacion:hover .background-hover {
+  width: 400px;
+  height: 800px;
+  top: -70px;
+  left: -70px;
+}
+
+.texto-prueba {
+  z-index: 10;
+  position: absolute;
+  top: 1000px;
+  left: -700px;
+  transition: all 500ms ease;
+}
+
+.texto-prueba h1 {
+  color: #093637;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.Cocktails_Animacion:hover .texto-prueba {
+  top: 150px;
+  left: 82px;
+}
+
+.Cocktails_Animacion2:hover .background-hover {
+  background-color: rgba(135, 176, 147, 0.7);
+}
+
+.icon-drink {
+  font-size: 50px;
+  color: #093637;
+}
+
+.NuestrosProductos {
+  text-align: center;
+  border-bottom: 15px solid #87B093;
+  margin-bottom: 1rem;
+  padding-bottom: 3rem;
+}
+
+.NuestrosProductos__Portada {
+  height: 40vh;
+  background-blend-mode: soft-light;
+  background-color: #87b093;
+  border-bottom: 15px solid #87B093;
+}
+
+.NuestrosProductos__Portada h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: rgba(245, 237, 237, 0.76);
+  padding-top: 140px;
+}
+
+.NuestrosProductos__Texto {
+  margin-top: 3rem;
+}
+
+.NuestrosProductos h2 {
+  color: #1b272b;
+  border-bottom: 2px solid #1b272b;
+  font-size: 45px;
+}
+
+.NuestrosProductos h3 {
+  font-size: 30px;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  color: #1b272b;
+}
+
+.NuestrosProductos p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1b272b;
+}
+
+.NuestrosProductos__Linea {
+  padding: 3rem;
+}
+
+.NuestrosBotanicos {
+  text-align: center;
+  border-bottom: 15px solid #87B093;
+  margin-bottom: 1rem;
+  padding-bottom: 3rem;
+}
+
+.NuestrosBotanicos__Portada {
+  height: 40vh;
+  background-blend-mode: soft-light;
+  background-color: #87b093;
+  border-bottom: 15px solid #87B093;
+}
+
+.NuestrosBotanicos__Portada h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: rgba(245, 237, 237, 0.76);
+  padding-top: 140px;
+}
+
+.NuestrosBotanicos__Texto {
+  margin-top: 3rem;
+}
+
+.NuestrosBotanicos h2 {
+  color: #1b272b;
+  border-bottom: 2px solid #1b272b;
+  font-size: 45px;
+}
+
+.NuestrosBotanicos h3 {
+  font-size: 30px;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  color: #1b272b;
+}
+
+.NuestrosBotanicos p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1b272b;
+}
+
+.NuestrosBotanicos__Linea {
+  padding: 3rem;
+}
+
+.Lineas__Citrica {
+  background-color: #87B093;
+  border-radius: 15px;
+  padding: 3rem 3rem 3rem 130px;
+}
+
+.Lineas__Clasica {
+  border: 10px solid #87B093;
+  margin: 2rem 0rem;
+  border-radius: 15px;
+  padding: 3rem 100px 3rem 3rem;
+}
+
+.Lineas__Premium {
+  background-color: #87B093;
+  border-radius: 15px;
+  padding: 3rem 3rem 3rem 130px;
+}
+
+.Main__Imagenes {
+  height: 90vh;
+  background-image: url(../Imag/completo2.jpg);
+  background-size: cover;
+  border-bottom: 15px solid #87B093;
+}
+
+.Botanicos {
+  padding: 60px 0px;
+  text-align: center;
+  border-bottom: 15px solid #87B093;
+}
+
+.Botanicos img {
+  max-width: 100%;
+}
+
+.Botanicos h2 {
+  padding-bottom: 50px;
+  font-size: 70px;
+  font-weight: bold;
+  color: #477167;
+}
+
+.Botanicos h3 {
+  color: #1b272b;
+  border-bottom: 2px solid #1b272b;
+  font-size: 45px;
+}
+
+.Botanicos p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1b272b;
+}
+
+.Lineas {
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.Lineas__Citrica {
+  background-color: #87B093;
+  border-radius: 15px;
+  padding: 3rem 3rem 3rem 130px;
+}
+
+.Lineas__Clasica {
+  border: 10px solid #87B093;
+  margin: 2rem 0rem;
+  border-radius: 15px;
+  padding: 3rem 100px 3rem 3rem;
+  background-color: white;
+}
+
+.Lineas__Premium {
+  background-color: #87B093;
+  border-radius: 15px;
+  padding: 3rem 3rem 3rem 130px;
+}
+
+.Lineas img {
+  border-radius: 20px;
+  width: 60%;
+}
+
+.Productos {
+  background-image: url(../Imgs/ladrillos.jpg);
+  padding: 60px 0px;
+  text-align: center;
+  border-bottom: 15px solid #87B093;
+}
+
+.Productos h2 {
+  padding-bottom: 50px;
+  font-size: 70px;
+  font-weight: bold;
+  color: #1b272b;
+}
+
+.Lineas__Fotos div {
+  width: 28%;
+  margin-bottom: 30px;
+}
+
+.Lineas__Fotos img {
+  max-width: 100%;
+  border: 10px solid #87B093;
+  box-shadow: 10px 10px;
+}
+
+.Cocktails__Home img {
+  max-width: 100%;
+  width: 60%;
+  align-items: center;
+}
+
+.Tragos {
+  text-align: center;
+  padding: 60px 0px;
+  border-bottom: 15px solid #87B093;
+  margin-bottom: 1rem;
+}
+
+.Tragos h2 {
+  padding-bottom: 50px;
+  font-size: 70px;
+  font-weight: bold;
+  color: #477167;
+}
+
+.Tragos h3 {
+  color: #1b272b;
+  font-size: 45px;
+}
+
+.Tragos p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1b272b;
+}
+
+.Tragos__Intro {
+  background-color: #87B093;
+  padding: 80px 0px;
+}
+
+.Lineas__Citrica {
+  position: relative;
+}
+
+.Lineas__Citrica::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: " ";
+  background: linear-gradient(to bottom, #87B093, #1b272b);
+  width: 100%;
+  height: 100%;
+  filter: blur(15px);
+  z-index: -1;
+}
+
+.Lineas__Premium {
+  position: relative;
+}
+
+.Lineas__Premium::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: " ";
+  background: linear-gradient(to bottom, #87B093, #1b272b);
+  width: 100%;
+  height: 100%;
+  filter: blur(15px);
+  z-index: -1;
+}
+
+.Lineas__Clasica {
+  box-shadow: inset 0 0 15px #093637;
+}
+
+/*# sourceMappingURL=style.css.map */

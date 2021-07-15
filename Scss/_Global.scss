@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primary-color: #87B093;
+
+
+@each $section in botanicos, productos, cocktails {
+    .#{$section}-icon { 
+          Background-image: url("../Imag/#{$section}.jpg");
+     }
+ } 
+
+
+.Footer {
+    padding: 5px 0px;
+    background-color: #87b093;
+    color: white;
+}
+.Footer__Data, .Footer__Creator {
+    font-size: 25px;
+    font-weight: 400;
+}
+.Footer__Redes {
+    font-size: 35px;
+    font-weight: 500px;
+    color: #1b272b;
+}
+.Footer {
+    color: #1b272b;
+}
+.Footer__Redes span{
+    color: #1b272b;
+    font-size: 50px;
+    padding: 1rem 2rem;
+}

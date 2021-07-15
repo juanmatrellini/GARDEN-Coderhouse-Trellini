@@ -1,0 +1,48 @@
+/*ANIMACION LOGO*/
+.Header__Logo {
+    animation-duration: 1.5s;
+    transform-origin: bottom;
+    animation-name: bounce-6;
+    animation-timing-function: ease;
+}
+@keyframes bounce-6 {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-100px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+/*ANIMACION GLOBAL*/
+main {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.Cocktails__Portada h2,
+.Contacto__Portada h2,
+.NuestrosBotanicos__Portada h2,
+.NuestrosProductos__Portada h2{
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+@keyframes bounce-1 {
+    0%   { transform: translateY(-250px); }
+    100%  { transform: translateY(0px); }
+}
+
+.Header__NavLinks {
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

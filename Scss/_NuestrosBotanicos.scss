@@ -1,0 +1,62 @@
+.NuestrosBotanicos {
+    text-align: center;
+    border-bottom: 15px solid $primary-color;
+    margin-bottom: 1rem;
+    padding-bottom: 3rem;
+}
+.NuestrosBotanicos__Portada {
+    height: 40vh;
+    background-blend-mode: soft-light;
+    background-color: rgb(135, 176, 147);
+    border-bottom: 15px solid $primary-color;
+}
+.NuestrosBotanicos__Portada h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: rgba(245, 237, 237, 0.76);
+    padding-top: 140px;
+}
+.NuestrosBotanicos__Texto {
+    margin-top: 3rem;
+}
+.NuestrosBotanicos h2 {
+    color: #1b272b;
+    border-bottom: 2px solid #1b272b;
+    font-size: 45px;
+}
+.NuestrosBotanicos h3 {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    color: #1b272b;
+}
+.NuestrosBotanicos p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #1b272b;
+}
+.NuestrosBotanicos__Linea {
+    padding: 3rem;
+}
+
+
+.Lineas__Citrica {
+    background-color: $primary-color;
+    border-radius: 15px;
+    padding: 3rem 3rem 3rem 130px;
+}
+
+
+.Lineas__Clasica {
+    border: 10px solid $primary-color;
+    margin: 2rem 0rem;
+    border-radius: 15px;
+    padding: 3rem 100px 3rem 3rem;
+}
+
+.Lineas__Premium {
+    background-color: $primary-color;
+    border-radius: 15px;
+    padding: 3rem 3rem 3rem 130px;
+}
+

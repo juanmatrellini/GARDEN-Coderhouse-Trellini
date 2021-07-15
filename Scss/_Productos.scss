@@ -1,0 +1,41 @@
+.NuestrosProductos {
+    text-align: center;
+    border-bottom: 15px solid $primary-color;
+    margin-bottom: 1rem;
+    padding-bottom: 3rem;
+}
+.NuestrosProductos__Portada{
+    height: 40vh;
+    background-blend-mode: soft-light;
+    background-color: rgb(135, 176, 147);
+    border-bottom: 15px solid $primary-color;
+}
+.NuestrosProductos__Portada h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: rgba(245, 237, 237, 0.76);
+    padding-top: 140px;
+}
+.NuestrosProductos__Texto {
+    margin-top: 3rem;
+}
+.NuestrosProductos h2 {
+    color: #1b272b;
+    border-bottom: 2px solid #1b272b;
+    font-size: 45px;
+}
+.NuestrosProductos h3 {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    color: #1b272b;
+}
+.NuestrosProductos p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #1b272b;
+}
+.NuestrosProductos__Linea {
+    padding: 3rem;
+}
+ 

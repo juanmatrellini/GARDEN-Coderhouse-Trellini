@@ -1,0 +1,205 @@
+.Cocktails {
+    text-align: center;
+    border-bottom: 15px solid $primary-color;
+    padding-bottom: 3rem;
+}
+.Cocktails__Portada {
+    height: 40vh;
+    background-size: cover;
+    background-position-y: 34%;
+    background-blend-mode: soft-light;
+    background-color: $primary-color;
+    border-bottom: 15px solid $primary-color;
+    h1 {
+        font-size: 70px;
+    font-weight: bold;
+    color: rgba(245, 237, 237, 0.8);
+    padding-top: 140px;
+    }
+}
+
+
+.Cocktails__Texto {
+    margin-top: 3rem;
+}
+
+.Cocktails h3 {
+    color: #1b272b;
+    border-bottom: 2px solid #1b272b;
+    font-size: 45px;
+}
+.Cocktails h4 {
+    font-size: 28px;
+    font-weight: 400;
+    padding-top: 2rem;
+    color: #1b272b;
+}
+.NuestrosBotanicos p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #1b272b;
+}
+.Cocktails__Foto {
+    padding: 3rem 1rem;
+}
+.Cocktails__Foto img {
+    width: 100% !important;
+}
+.Recetas{
+    background-image: url(../Imag/ladrillos.jpg);
+    padding: 60px 0px;
+    border-bottom: 15px solid $primary-color;
+    margin-bottom: 1rem
+}
+.Recetas h2{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 70px;
+    font-weight: bold;
+    color: #1b272b;
+}
+.Recetas h3 {
+    font-size: 45px;
+}
+.Recetas p {
+    font-size: 20px;
+    font-weight: 400;
+}
+.Recetas__Gin {
+    border: 10px double #1b272b;
+    background-color: rgba(135, 176, 147, 0.815);
+    margin: 2rem 5rem;
+    color: #1b272b;
+}
+.Recetas__Gin h3{
+    padding: 3rem 6rem 0rem 6rem;
+    font-weight: bold;
+}
+.Recetas__Gin_Ing {
+    text-align: center;
+    padding: 3rem 2.5rem 2rem 2.5rem;
+}
+.Recetas__Gin_Texto {
+    text-align: center;
+    padding: 3rem 4rem;
+}
+.TIP p{
+    font-weight: 700;
+    padding-top: 2rem;
+    color: #1b272b;
+}
+.Recetas__Vodka {
+    border: 10px double $primary-color;
+    background-color: rgba(241, 239, 239, 0.5);
+    margin: 7rem 5rem;
+    color: #1b272b;
+}
+.Recetas__Vodka h3{
+    padding: 3rem 6rem 0rem 6rem;
+    font-weight: bold;
+}
+.Recetas__Vodka_Ing {
+    text-align: center;
+    padding: 3rem 2.5rem 3rem 2.5rem;
+}
+.Recetas__Vodka_Texto {
+    text-align: center;
+    padding: 3rem 4rem;
+}
+.Recetas__Negroni {
+    border: 10px double $primary-color;
+    background-color: rgba(241, 239, 239, 0.5);
+    margin: 7rem 5rem;
+    color: #1b272b;
+}
+.Recetas__Negroni h3{
+    padding: 3rem 6rem 0rem 6rem;
+    font-weight: bold;
+}
+.Recetas__Negroni_Ing {
+    text-align: center;
+    padding: 3rem 1rem 2rem 4rem;
+}
+.Recetas__Negroni_Texto {
+    text-align: center;
+    padding: 3rem 4rem;
+}
+.Recetas__Vermu {
+    border: 10px double #1b272b;
+    background-color: rgba(135, 176, 147, 0.815);
+    margin: 7rem 5rem;
+    color: #1b272b;
+}
+.Recetas__Vermu h3{
+    padding: 3rem 6rem 0rem 6rem;
+    font-weight: bold;
+}
+.Recetas__Vermu_Ing {
+    text-align: center;
+    padding: 3rem 2.5rem 2rem 2.5rem;
+}
+.Recetas__Vermu_Texto {
+    text-align: center;
+    padding: 3rem 4rem;
+}
+
+/*prueba hoover*/
+.Cocktails_Animacion {
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 400ms ease;
+    margin: auto;
+}
+.Cocktails_Animacion:hover{
+    transform: translate(5px, -5px);
+    box-shadow: -10px 20px 20px -10px rgba(0, 0, 0, 0.5);
+
+}
+
+.Cocktails_Animacion{
+    position: relative;
+    z-index: 1;
+    transition: all 400ms ease;
+}
+.Cocktails_Animacion .background-hover{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    transition: all 400ms ease;
+    background-color: rgba(135, 176, 147, 0.5);
+}
+
+.Cocktails_Animacion:hover .background-hover{
+    width: 400px;
+    height: 800px;
+    top: -70px;
+    left: -70px;
+}
+.texto-prueba {
+    z-index: 10;
+    position: absolute;
+    top: 1000px;
+    left: -700px;
+    transition: all 500ms ease;
+}
+.texto-prueba h1 {
+    color: #093637;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.Cocktails_Animacion:hover .texto-prueba {
+    top:150px;
+    left: 82px;
+}
+.Cocktails_Animacion2:hover .background-hover{
+    background-color: rgba(135, 176, 147, 0.7);
+}
+.icon-drink {
+    font-size: 50px;
+    color: #093637;
+}

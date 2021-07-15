@@ -1,0 +1,139 @@
+
+.Main__Imagenes {
+    height: 90vh;
+    background-image: url(../Imag/completo2.jpg);
+    background-size: cover;
+    border-bottom: 15px solid $primary-color;
+}
+.Botanicos {
+    padding: 60px 0px;
+    text-align: center;
+    border-bottom: 15px solid $primary-color;
+}
+.Botanicos img {
+    max-width: 100%;
+}
+.Botanicos h2 {
+    padding-bottom: 50px;
+    font-size: 70px;
+    font-weight: bold;
+    color: #477167;
+}
+.Botanicos h3 {
+    color: #1b272b;
+    border-bottom: 2px solid #1b272b;
+    font-size: 45px;
+}
+.Botanicos p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #1b272b;
+}
+.Lineas {
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.Lineas__Citrica {
+    background-color: $primary-color;
+    border-radius: 15px;
+    padding: 3rem 3rem 3rem 130px;
+}
+.Lineas__Clasica {
+    border: 10px solid $primary-color;
+    margin: 2rem 0rem;
+    border-radius: 15px;
+    padding: 3rem 100px 3rem 3rem;
+    background-color: white;
+}
+
+.Lineas__Premium {
+    background-color: $primary-color;
+    border-radius: 15px;
+    padding: 3rem 3rem 3rem 130px;
+}
+.Lineas img {
+    border-radius: 20px;
+    width: 60%;
+}
+.Productos {
+    background-image: url(../Imgs/ladrillos.jpg);
+    padding: 60px 0px;
+    text-align: center;
+    border-bottom: 15px solid $primary-color;
+}
+.Productos h2 {
+    padding-bottom: 50px;
+    font-size: 70px;
+    font-weight: bold;
+    color: #1b272b;
+}
+.Lineas__Fotos div {
+    width: 28%;
+    margin-bottom: 30px;
+}
+.Lineas__Fotos img {
+    max-width: 100%;
+    border: 10px solid $primary-color;
+    box-shadow: 10px 10px;
+}
+.Cocktails__Home img{
+    max-width: 100%;
+    width: 60%;
+    align-items: center;
+}
+.Tragos {
+    text-align: center;
+    padding: 60px 0px;
+    border-bottom: 15px solid $primary-color;
+    margin-bottom: 1rem
+}
+.Tragos h2{
+    padding-bottom: 50px;
+    font-size: 70px;
+    font-weight: bold;
+    color: #477167;
+}
+.Tragos h3 {
+    color: #1b272b;
+    font-size: 45px;
+}
+.Tragos p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #1b272b;
+}
+.Tragos__Intro {
+    background-color: $primary-color;
+    padding: 80px 0px;
+}
+.Lineas__Citrica {
+    position: relative;
+}
+.Lineas__Citrica::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: ' ';
+    background: linear-gradient(to bottom, $primary-color, #1b272b);
+    width: 100%;
+    height: 100%;
+    filter:blur(15px);
+    z-index: -1;
+}
+.Lineas__Premium {
+    position: relative;
+}
+.Lineas__Premium::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: ' ';
+    background: linear-gradient(to bottom, $primary-color, #1b272b);
+    width: 100%;
+    height: 100%;
+    filter:blur(15px);
+    z-index: -1;
+}
+.Lineas__Clasica{
+    box-shadow: inset 0 0 15px #093637;
+}
