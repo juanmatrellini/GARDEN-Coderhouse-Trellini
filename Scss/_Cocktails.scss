@@ -10,15 +10,15 @@
     background-blend-mode: soft-light;
     background-color: $primary-color;
     border-bottom: 15px solid $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     h1 {
         font-size: 70px;
     font-weight: bold;
     color: rgba(245, 237, 237, 0.8);
-    padding-top: 140px;
     }
 }
-
-
 .Cocktails__Texto {
     margin-top: 3rem;
 }
