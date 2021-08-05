@@ -54,6 +54,8 @@
 .Lineas img {
     border-radius: 20px;
     width: 60%;
+    max-width: 260px;
+    min-width: 200px;
 }
 .Productos {
     background-image: url(../Imag/ladrillos.jpg);
@@ -68,11 +70,11 @@
     color: #1b272b;
 }
 .Lineas__Fotos div {
-    width: 28%;
+    width: 400px;
     margin-bottom: 30px;
 }
 .Lineas__Fotos img {
-    max-width: 100%;
+    width: 100%;
     border: 10px solid $primary-color;
     box-shadow: 10px 10px;
 }
@@ -80,6 +82,8 @@
     max-width: 100%;
     width: 60%;
     align-items: center;
+    box-shadow: 10px 10px;
+    margin-bottom: 1rem;
 }
 .Tragos {
     text-align: center;
@@ -138,13 +142,10 @@
     box-shadow: inset 0 0 15px #093637;
 }
 
-@media (max-width: 1000px) { 
+@media screen and (max-width: 1000px) { 
     .Lineas__Citrica, .Lineas__Clasica, .Lineas__Premium {
     padding: 3rem;
 }
-    .Lineas img {
-        width: 100%;
-    }
     .Lineas__Citrica p, .Lineas__Premium p {
         padding-bottom: 2rem;
     }
@@ -160,5 +161,37 @@
     }
     Header__NavLinks {
         padding: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Lineas__Citrica, .Lineas__Clasica, .Lineas__Premium {
+        margin: 0rem 2rem 2rem 2rem
+    }
+}
+@media screen and (max-width: 500px) {
+    .Botanicos h2, .Productos h2, .Tragos h2 {
+        font-size: 50px;
+    }
+    .Botanicos h3, .Productos h3, .Tragos h3 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .Lineas__Citrica, .Lineas__Clasica, .Lineas__Premium, .Tragos__Intro {
+        padding: 1.5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Tragos__Intro {
+        margin: 0rem 1rem 1rem 1rem;
+    }
+}
+@media screen and (max-width: 720px) {
+    .Lineas__Fotos img {
+        max-width: 250px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .Lineas__Fotos img, .Cocktails__Home img {
+        box-shadow: none;
     }
 }

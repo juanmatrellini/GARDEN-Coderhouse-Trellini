@@ -16,6 +16,19 @@
   Background-image: url("../Imag/cocktails.jpg");
 }
 
+body {
+  animation-duration: 1s;
+  animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .Footer {
   padding: 5px 0px;
   background-color: #87b093;
@@ -23,12 +36,12 @@
 }
 
 .Footer__Data, .Footer__Creator {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
 }
 
 .Footer__Redes {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 500px;
   color: #1b272b;
 }
@@ -43,47 +56,89 @@
   padding: 1rem 2rem;
 }
 
-.Header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media (max-width: 500px) {
+  .Footer__Data, .Footer__Creator {
+    font-size: 17px;
+  }
+
+  .Footer__Redes {
+    font-size: 25px;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
   width: 100%;
   height: 10vh;
   position: sticky;
   top: 0;
   z-index: 900;
   background-color: #87b090;
-  padding: 2rem 2rem;
 }
 
-.Header__logo {
-  padding-left: 100px;
-  width: 55%;
+nav {
+  background-color: #87b090;
 }
 
-.Header__Logo h1 {
+.logo {
+  margin-right: auto;
   color: #1b272b;
   font-weight: bold;
-  margin: auto;
   font-size: 60px;
+  animation-duration: 3s;
+  animation-name: aparecer;
+}
+
+.navbar-collapse {
+  flex-grow: 0 !important;
 }
 
 .Header__LogoLink {
-  text-decoration: none;
   color: #1b272b;
 }
 
 .Header__NavLinks {
-  display: flex;
   list-style: none;
-  justify-content: space-between;
-  padding-right: 100px;
   margin: auto;
 }
 
+.Header__NavLinks li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.Header__NavLinks {
+  margin-right: 0px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+li, a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    font-size: 50px;
+  }
+
+  .Header__Link {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo {
+    font-size: 45px;
+  }
+}
 .Header__Link {
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.753);
+  transition: 0.5s ease;
 }
 
 .Header__LogoLink:hover {
@@ -91,17 +146,18 @@
 }
 
 .Header__NavLinks li {
-  color: white;
+  color: rgba(255, 255, 255, 0.815);
   font-size: 20px;
   font-weight: 380;
 }
 
-nav {
-  flex: 3;
+@media screen and (min-width: 1080px) {
+  .Header__Link:hover {
+    font-size: 23px;
+  }
 }
-
 /*ANIMACION LOGO*/
-.Header__Logo {
+.logo {
   animation-duration: 1.5s;
   transform-origin: bottom;
   animation-name: bounce-6;
@@ -206,8 +262,6 @@ main {
 
 .Contact__Label {
   display: flex;
-  width: 80%;
-  height: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -217,11 +271,11 @@ form {
   display: flex;
   flex-flow: column;
   background-color: white;
-  width: 60%;
-  height: 80%;
   padding: 20px;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin: 3rem 10rem;
   box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 50px;
   border-radius: 10px;
 }
@@ -252,7 +306,7 @@ form h2 {
   background-color: rgba(135, 176, 147, 0.715);
   padding: 15px;
   width: 200px;
-  margin: 20px;
+  margin: 10px;
   transition: all 300ms;
 }
 
@@ -260,6 +314,67 @@ form h2 {
   transform: scale(1.15);
 }
 
+@media (max-width: 1200px) {
+  form h2 {
+    font-size: 38px;
+  }
+
+  form {
+    margin: 2rem 3rem;
+    padding: 10px;
+  }
+
+  input {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .Contacto__Portada h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 780px) {
+  form {
+    margin: 0;
+  }
+
+  .button {
+    width: 100px;
+  }
+
+  .Contacto__Fondo {
+    padding: 3rem;
+  }
+}
+@media (max-width: 550px) {
+  form h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  form {
+    padding: 7px;
+  }
+
+  .button {
+    width: 80px;
+    font-size: 14px;
+    padding: 1rem;
+  }
+
+  .Contacto__Fondo {
+    padding: 2rem;
+  }
+
+  input, textarea {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1000px) {
+  .Contacto__Portada h1 {
+    font-size: 50px;
+  }
+}
 .Cocktails {
   text-align: center;
   border-bottom: 15px solid #87B093;
@@ -291,6 +406,7 @@ form h2 {
   color: #1b272b;
   border-bottom: 2px solid #1b272b;
   font-size: 45px;
+  font-weight: bold;
 }
 
 .Cocktails h4 {
@@ -312,6 +428,8 @@ form h2 {
 
 .Cocktails__Foto img {
   width: 100% !important;
+  max-width: 280px;
+  max-height: 500px;
 }
 
 .Recetas {
@@ -346,8 +464,9 @@ form h2 {
 }
 
 .Recetas__Gin h3 {
-  padding: 3rem 6rem 0rem 6rem;
+  padding-top: 3rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .Recetas__Gin_Ing {
@@ -357,7 +476,7 @@ form h2 {
 
 .Recetas__Gin_Texto {
   text-align: center;
-  padding: 3rem 4rem;
+  padding: 3rem;
 }
 
 .TIP p {
@@ -374,18 +493,20 @@ form h2 {
 }
 
 .Recetas__Vodka h3 {
-  padding: 3rem 6rem 0rem 6rem;
+  padding: 3rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .Recetas__Vodka_Ing {
   text-align: center;
-  padding: 3rem 2.5rem 3rem 2.5rem;
+  padding: 0rem 3rem 3rem 3rem;
 }
 
 .Recetas__Vodka_Texto {
   text-align: center;
-  padding: 3rem 4rem;
+  margin: auto;
+  padding: 3rem;
 }
 
 .Recetas__Negroni {
@@ -396,18 +517,20 @@ form h2 {
 }
 
 .Recetas__Negroni h3 {
-  padding: 3rem 6rem 0rem 6rem;
+  padding: 3rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .Recetas__Negroni_Ing {
   text-align: center;
-  padding: 3rem 1rem 2rem 4rem;
+  padding: 0rem 3rem 3rem 3rem;
 }
 
 .Recetas__Negroni_Texto {
   text-align: center;
-  padding: 3rem 4rem;
+  padding: 3rem;
+  margin: auto;
 }
 
 .Recetas__Vermu {
@@ -418,94 +541,149 @@ form h2 {
 }
 
 .Recetas__Vermu h3 {
-  padding: 3rem 6rem 0rem 6rem;
+  padding: 3rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .Recetas__Vermu_Ing {
   text-align: center;
-  padding: 3rem 2.5rem 2rem 2.5rem;
+  padding: 0rem 3rem 3rem 3rem;
 }
 
 .Recetas__Vermu_Texto {
   text-align: center;
-  padding: 3rem 4rem;
-}
-
-/*prueba hoover*/
-.Cocktails_Animacion {
-  width: fit-content;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 400ms ease;
+  padding: 3rem;
   margin: auto;
 }
 
-.Cocktails_Animacion:hover {
-  transform: translate(5px, -5px);
-  box-shadow: -10px 20px 20px -10px rgba(0, 0, 0, 0.5);
-}
+/*prueba hoover*/
+@media (min-width: 1400px) {
+  .Cocktails_Animacion {
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 400ms ease;
+    margin: auto;
+  }
 
-.Cocktails_Animacion {
-  position: relative;
-  z-index: 1;
-  transition: all 400ms ease;
-}
+  .Cocktails_Animacion:hover {
+    transform: translate(5px, -5px);
+    box-shadow: -10px 20px 20px -10px rgba(0, 0, 0, 0.5);
+  }
 
-.Cocktails_Animacion .background-hover {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 250px;
-  left: -170px;
-  transition: all 400ms ease;
-  background-color: rgba(135, 176, 147, 0.5);
-}
+  .Cocktails_Animacion {
+    position: relative;
+    z-index: 1;
+    transition: all 400ms ease;
+  }
 
-.Cocktails_Animacion:hover .background-hover {
-  width: 400px;
-  height: 800px;
-  top: -70px;
-  left: -70px;
-}
+  .Cocktails_Animacion .background-hover {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    transition: all 400ms ease;
+    background-color: rgba(135, 176, 147, 0.5);
+  }
 
-.texto-prueba {
-  z-index: 10;
-  position: absolute;
-  top: 1000px;
-  left: -700px;
-  transition: all 500ms ease;
-}
+  .Cocktails_Animacion:hover .background-hover {
+    width: 400px;
+    height: 800px;
+    top: -70px;
+    left: -70px;
+  }
 
-.texto-prueba h1 {
-  color: #093637;
-  font-size: 40px;
-  font-weight: 400;
-}
+  .texto-prueba {
+    z-index: 10;
+    position: absolute;
+    top: 1000px;
+    left: -700px;
+    transition: all 500ms ease;
+  }
 
-.Cocktails_Animacion:hover .texto-prueba {
-  top: 150px;
-  left: 82px;
-}
+  .texto-prueba h1 {
+    color: #093637;
+    font-size: 40px;
+    font-weight: 400;
+  }
 
-.Cocktails_Animacion2:hover .background-hover {
-  background-color: rgba(135, 176, 147, 0.7);
-}
+  .Cocktails_Animacion:hover .texto-prueba {
+    top: 150px;
+    left: 82px;
+  }
 
-.icon-drink {
-  font-size: 50px;
-  color: #093637;
-}
+  .Cocktails_Animacion2:hover .background-hover {
+    background-color: rgba(135, 176, 147, 0.7);
+  }
 
+  .icon-drink {
+    font-size: 50px;
+    color: #093637;
+  }
+}
+@media (max-width: 1400px) {
+  .texto-prueba {
+    display: none;
+  }
+}
 @media (max-width: 1000px) {
+  .Cocktails__Portada h1 {
+    font-size: 60px;
+  }
+
+  .Recetas h2 {
+    font-size: 60px;
+  }
+
+  .Cocktails h3 {
+    font-size: 40px;
+  }
+
+  .Cocktails h4 {
+    font-size: 25px;
+  }
+
+  .Recetas p {
+    font-size: 18px;
+  }
+
   .Recetas__Gin, .Recetas__Negroni, .Recetas__Vermu, .Recetas__Vodka {
-    margin: 0;
+    margin: 2rem;
   }
 
   .Recetas__Gin h3, .Recetas__Gin_Ing, .Recetas__Gin_Texto, .Recetas__Negroni h3, .Recetas__Vermu h3, .Recetas__Vodka h3, .Recetas__Negroni_Ing, .Recetas__Negroni_Texto, .Recetas__Vermu_Ing, .Recetas__Vermu_Texto, .Recetas__Vodka_Ing, .Recetas__Vodka_Texto {
     text-align: center;
     padding: 1rem 1rem;
+    font-size: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .Recetas__Gin, .Recetas__Negroni, .Recetas__Vermu, .Recetas__Vodka {
+    margin: 1rem;
+  }
+
+  .Cocktails__Portada h1 {
+    font-size: 50px;
+  }
+
+  .Recetas__Gin h3, .Recetas__Gin_Ing, .Recetas__Gin_Texto, .Recetas__Negroni h3, .Recetas__Vermu h3, .Recetas__Vodka h3, .Recetas__Negroni_Ing, .Recetas__Negroni_Texto, .Recetas__Vermu_Ing, .Recetas__Vermu_Texto, .Recetas__Vodka_Ing, .Recetas__Vodka_Texto {
+    padding: 0.5rem;
+  }
+
+  .Cocktails h3 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .Recetas p {
+    font-size: 15px;
+  }
+
+  .Recetas__Gin h3, .Recetas__Negroni h3, .Recetas__Vermu h3, .Recetas__Vodka h3 {
+    font-size: 35px;
   }
 }
 .NuestrosProductos {
@@ -539,6 +717,7 @@ form h2 {
   color: #1b272b;
   border-bottom: 2px solid #1b272b;
   font-size: 45px;
+  font-weight: bold;
 }
 
 .NuestrosProductos h3 {
@@ -556,6 +735,40 @@ form h2 {
 
 .NuestrosProductos__Linea {
   padding: 3rem;
+}
+
+@media (max-width: 1000px) {
+  .NuestrosProductos__Portada h1 {
+    font-size: 60px;
+  }
+
+  .NuestrosProductos h2 {
+    font-size: 38px;
+  }
+
+  .NuestrosProductos h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .NuestrosProductos__Portada h1 {
+    font-size: 50px;
+  }
+
+  .NuestrosProductos h2 {
+    font-size: 30px;
+  }
+
+  .NuestrosProductos h3 {
+    font-size: 20px;
+  }
+}
+.Productos__box, .Productos__gin, .Productos__acc {
+  max-width: 250px;
+}
+
+.Productos__texto, .Productos__marca, .Productos__tipo {
+  margin-top: 2rem;
 }
 
 .NuestrosBotanicos {
@@ -589,17 +802,18 @@ form h2 {
   color: #1b272b;
   border-bottom: 2px solid #1b272b;
   font-size: 45px;
+  font-weight: bold;
 }
 
 .NuestrosBotanicos h3 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   padding-bottom: 1rem;
   color: #1b272b;
 }
 
 .NuestrosBotanicos p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: #1b272b;
 }
@@ -627,6 +841,50 @@ form h2 {
   padding: 3rem 3rem 3rem 130px;
 }
 
+@media (max-width: 1000px) {
+  .NuestrosBotanicos__Portada h1 {
+    font-size: 60px;
+  }
+
+  .NuestrosBotanicos h2 {
+    font-size: 38px;
+  }
+
+  .NuestrosBotanicos h3 {
+    font-size: 25px;
+  }
+
+  .NuestrosBotanicos__Linea {
+    padding: 1rem;
+  }
+
+  .NuestrosBotanicos p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 500px) {
+  .NuestrosBotanicos__Portada h1 {
+    font-size: 50px;
+  }
+
+  .NuestrosBotanicos h2 {
+    font-size: 30px;
+    border-top: 2px solid #1b272b;
+  }
+
+  .NuestrosBotanicos h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .Botanicos__Lineas {
+    margin-bottom: 3rem;
+  }
+
+  .NuestrosBotanicos p {
+    font-size: 16px;
+  }
+}
 .Main__Imagenes {
   height: 90vh;
   background-image: url(../Imag/completo2.jpg);
@@ -691,6 +949,8 @@ form h2 {
 .Lineas img {
   border-radius: 20px;
   width: 60%;
+  max-width: 260px;
+  min-width: 200px;
 }
 
 .Productos {
@@ -708,12 +968,12 @@ form h2 {
 }
 
 .Lineas__Fotos div {
-  width: 28%;
+  width: 400px;
   margin-bottom: 30px;
 }
 
 .Lineas__Fotos img {
-  max-width: 100%;
+  width: 100%;
   border: 10px solid #87B093;
   box-shadow: 10px 10px;
 }
@@ -722,6 +982,8 @@ form h2 {
   max-width: 100%;
   width: 60%;
   align-items: center;
+  box-shadow: 10px 10px;
+  margin-bottom: 1rem;
 }
 
 .Tragos {
@@ -790,13 +1052,9 @@ form h2 {
   box-shadow: inset 0 0 15px #093637;
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .Lineas__Citrica, .Lineas__Clasica, .Lineas__Premium {
     padding: 3rem;
-  }
-
-  .Lineas img {
-    width: 100%;
   }
 
   .Lineas__Citrica p, .Lineas__Premium p {
@@ -818,6 +1076,40 @@ form h2 {
 
   Header__NavLinks {
     padding: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Lineas__Citrica, .Lineas__Clasica, .Lineas__Premium {
+    margin: 0rem 2rem 2rem 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Botanicos h2, .Productos h2, .Tragos h2 {
+    font-size: 50px;
+  }
+
+  .Botanicos h3, .Productos h3, .Tragos h3 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .Lineas__Citrica, .Lineas__Clasica, .Lineas__Premium, .Tragos__Intro {
+    padding: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Tragos__Intro {
+    margin: 0rem 1rem 1rem 1rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .Lineas__Fotos img {
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Lineas__Fotos img, .Cocktails__Home img {
+    box-shadow: none;
   }
 }
 

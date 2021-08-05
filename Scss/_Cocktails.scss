@@ -27,6 +27,7 @@
     color: #1b272b;
     border-bottom: 2px solid #1b272b;
     font-size: 45px;
+    font-weight: bold;
 }
 .Cocktails h4 {
     font-size: 28px;
@@ -44,6 +45,8 @@
 }
 .Cocktails__Foto img {
     width: 100% !important;
+    max-width: 280px;
+    max-height: 500px;
 }
 .Recetas{
     background-image: url(../Imag/ladrillos.jpg);
@@ -72,8 +75,9 @@
     color: #1b272b;
 }
 .Recetas__Gin h3{
-    padding: 3rem 6rem 0rem 6rem;
+    padding-top: 3rem;
     font-weight: bold;
+    text-align: center;
 }
 .Recetas__Gin_Ing {
     text-align: center;
@@ -81,7 +85,7 @@
 }
 .Recetas__Gin_Texto {
     text-align: center;
-    padding: 3rem 4rem;
+    padding: 3rem;
 }
 .TIP p{
     font-weight: 700;
@@ -95,16 +99,18 @@
     color: #1b272b;
 }
 .Recetas__Vodka h3{
-    padding: 3rem 6rem 0rem 6rem;
+    padding: 3rem;
     font-weight: bold;
+    text-align: center;
 }
 .Recetas__Vodka_Ing {
     text-align: center;
-    padding: 3rem 2.5rem 3rem 2.5rem;
+    padding: 0rem 3rem 3rem 3rem;
 }
 .Recetas__Vodka_Texto {
     text-align: center;
-    padding: 3rem 4rem;
+    margin: auto;
+    padding: 3rem;
 }
 .Recetas__Negroni {
     border: 10px double $primary-color;
@@ -113,16 +119,18 @@
     color: #1b272b;
 }
 .Recetas__Negroni h3{
-    padding: 3rem 6rem 0rem 6rem;
+    padding: 3rem;
     font-weight: bold;
+    text-align: center;
 }
 .Recetas__Negroni_Ing {
     text-align: center;
-    padding: 3rem 1rem 2rem 4rem;
+    padding: 0rem 3rem 3rem 3rem;
 }
 .Recetas__Negroni_Texto {
     text-align: center;
-    padding: 3rem 4rem;
+    padding: 3rem;
+    margin: auto;
 }
 .Recetas__Vermu {
     border: 10px double #1b272b;
@@ -131,85 +139,130 @@
     color: #1b272b;
 }
 .Recetas__Vermu h3{
-    padding: 3rem 6rem 0rem 6rem;
+    padding: 3rem;
     font-weight: bold;
+    text-align: center;
 }
 .Recetas__Vermu_Ing {
     text-align: center;
-    padding: 3rem 2.5rem 2rem 2.5rem;
+    padding: 0rem 3rem 3rem 3rem;
 }
 .Recetas__Vermu_Texto {
     text-align: center;
-    padding: 3rem 4rem;
+    padding: 3rem;
+    margin: auto;
 }
 
 /*prueba hoover*/
-.Cocktails_Animacion {
-    width: fit-content;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 400ms ease;
-    margin: auto;
+@media (min-width: 1400px){
+    .Cocktails_Animacion {
+        width: fit-content;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 400ms ease;
+        margin: auto;
+    }
+    .Cocktails_Animacion:hover{
+        transform: translate(5px, -5px);
+        box-shadow: -10px 20px 20px -10px rgba(0, 0, 0, 0.5);
+    
+    }
+    
+    .Cocktails_Animacion{
+        position: relative;
+        z-index: 1;
+        transition: all 400ms ease;
+    }
+    .Cocktails_Animacion .background-hover{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 250px;
+        left: -170px;
+        transition: all 400ms ease;
+        background-color: rgba(135, 176, 147, 0.5);
+    }
+    
+    .Cocktails_Animacion:hover .background-hover{
+        width: 400px;
+        height: 800px;
+        top: -70px;
+        left: -70px;
+    }
+    .texto-prueba {
+        z-index: 10;
+        position: absolute;
+        top: 1000px;
+        left: -700px;
+        transition: all 500ms ease;
+    }
+    .texto-prueba h1 {
+        color: #093637;
+        font-size: 40px;
+        font-weight: 400;
+    }
+    
+    .Cocktails_Animacion:hover .texto-prueba {
+        top:150px;
+        left: 82px;
+    }
+    .Cocktails_Animacion2:hover .background-hover{
+        background-color: rgba(135, 176, 147, 0.7);
+    }
+    .icon-drink {
+        font-size: 50px;
+        color: #093637;
+    }
 }
-.Cocktails_Animacion:hover{
-    transform: translate(5px, -5px);
-    box-shadow: -10px 20px 20px -10px rgba(0, 0, 0, 0.5);
-
+@media (max-width: 1400px) {
+    .texto-prueba {
+        display: none;
+    }
 }
-
-.Cocktails_Animacion{
-    position: relative;
-    z-index: 1;
-    transition: all 400ms ease;
-}
-.Cocktails_Animacion .background-hover{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 250px;
-    left: -170px;
-    transition: all 400ms ease;
-    background-color: rgba(135, 176, 147, 0.5);
-}
-
-.Cocktails_Animacion:hover .background-hover{
-    width: 400px;
-    height: 800px;
-    top: -70px;
-    left: -70px;
-}
-.texto-prueba {
-    z-index: 10;
-    position: absolute;
-    top: 1000px;
-    left: -700px;
-    transition: all 500ms ease;
-}
-.texto-prueba h1 {
-    color: #093637;
-    font-size: 40px;
-    font-weight: 400;
-}
-
-.Cocktails_Animacion:hover .texto-prueba {
-    top:150px;
-    left: 82px;
-}
-.Cocktails_Animacion2:hover .background-hover{
-    background-color: rgba(135, 176, 147, 0.7);
-}
-.icon-drink {
-    font-size: 50px;
-    color: #093637;
-}
-
 @media (max-width: 1000px) {
+    .Cocktails__Portada h1 {
+        font-size: 60px;
+    }
+    .Recetas h2 {
+        font-size: 60px;
+    }
+    .Cocktails h3 {
+        font-size: 40px;
+    }
+    .Cocktails h4 {
+        font-size: 25px;
+    }
+    .Recetas p {
+        font-size: 18px;
+    }
     .Recetas__Gin, .Recetas__Negroni, .Recetas__Vermu, .Recetas__Vodka {
-        margin: 0;
+        margin: 2rem;
     }
     .Recetas__Gin h3, .Recetas__Gin_Ing, .Recetas__Gin_Texto, .Recetas__Negroni h3, .Recetas__Vermu h3, .Recetas__Vodka h3, .Recetas__Negroni_Ing, .Recetas__Negroni_Texto, .Recetas__Vermu_Ing, .Recetas__Vermu_Texto, .Recetas__Vodka_Ing, .Recetas__Vodka_Texto {
         text-align: center;
         padding: 1rem 1rem;
+        font-size: 40px;
+    }
+}
+@media (max-width: 500px) {
+    .Recetas__Gin, .Recetas__Negroni, .Recetas__Vermu, .Recetas__Vodka {
+        margin: 1rem;
+    }
+    .Cocktails__Portada h1 {
+        font-size: 50px;
+    }
+    .Recetas__Gin h3, .Recetas__Gin_Ing, .Recetas__Gin_Texto, .Recetas__Negroni h3, .Recetas__Vermu h3, .Recetas__Vodka h3, .Recetas__Negroni_Ing, .Recetas__Negroni_Texto, .Recetas__Vermu_Ing, .Recetas__Vermu_Texto, .Recetas__Vodka_Ing, .Recetas__Vodka_Texto {
+        padding: .5rem;
+    }
+    .Cocktails h3 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .Recetas p {
+        font-size: 15px;
+    }
+    .Recetas__Gin h3, .Recetas__Negroni h3, .Recetas__Vermu h3, .Recetas__Vodka h3 {
+        font-size: 35px;
     }
 }

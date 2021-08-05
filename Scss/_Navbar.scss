@@ -1,48 +1,78 @@
-.Header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  header {
     width: 100%;
     height: 10vh;
     position: sticky;
     top: 0;
     z-index: 900;
     background-color: #87b090;
-    padding: 2rem 2rem;
-}
-.Header__logo {
-    padding-left: 100px;
-    width: 55%;
-}
-.Header__Logo h1 {
+  }
+  nav {
+    background-color: #87b090;
+  }
+  .logo {
+    margin-right: auto;
     color: #1b272b;
     font-weight: bold;
-    margin: auto;
     font-size: 60px;
-}
-.Header__LogoLink {
-    text-decoration: none;
-    color: #1b272b;
+    animation-duration: 3s;
+    animation-name: aparecer;
+  }
+  .navbar-collapse {
+    flex-grow: 0 !important;
+  }
+  .Header__LogoLink {
+    color:#1b272b;
 }
 .Header__NavLinks {
-    display: flex;
     list-style: none;
-    justify-content: space-between;
-    padding-right: 100px;
-    margin: auto
-}
-.Header__Link {
-    text-decoration: none;
-    color: white;
-}
-.Header__LogoLink:hover {
-    color: #1b272b
+    margin: auto;
 }
 .Header__NavLinks li {
-    color: white;
-    font-size: 20px;
-    font-weight: 380;
+    display: inline-block;
+    padding: 0px 20px;
 }
-nav {
-    flex: 3;
+  .Header__NavLinks {
+    margin-right: 0px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  li, a {
+    text-decoration: none;
+}
+@media screen and (max-width: 1000px) {
+  .logo {
+      font-size: 50px;
+  }
+  .Header__Link {
+      font-size: 17px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo {
+      font-size: 45px;
+  }
+}
+.Header__Link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.753);
+  transition: 0.5s ease;
+}
+.Header__LogoLink:hover {
+  color: #1b272b
+}
+.Header__NavLinks li {
+  color: rgba(255, 255, 255, 0.815);
+  font-size: 20px;
+  font-weight: 380;
+}
+@media screen and (min-width: 1080px) {
+  .Header__Link:hover {
+      font-size: 23px;   
+  }
 }

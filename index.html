@@ -13,22 +13,50 @@
     <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
-    <header class="Header">
-        <div class="Header__logo">
-            <h1><a class="Header__LogoLink" href="./index.html">GARDEN</a></h1>
-        </div>
-        <nav>
-            <div>
-                <ul class="Header__NavLinks">
-                    <li><a class="Header__Link Header__Link1" href="./index.html">Home</a></li>
-                    <li><a class="Header__Link Header__Link2" href="./NuestrosBotanicos/">Nuestros Botanicos</a></li>
-                    <li><a class="Header__Link Header__Link3" href="./Productos/">Productos</a></li>
-                    <li><a class="Header__Link Header__Link4" href="./Cocktails/">Cocktails</a></li>
-                    <li><a class="Header__Link Header__Link5" href="./Contacto/">Contacto</a></li>
-                    </ul>
+    <header>
+        <nav
+            class="navbar navbar-expand-lg navbar-dark"          >
+            <div class="container-fluid">
+              <a class="navbar-brand Header__LogoLink"  href="./index.html"
+                ><h1 class="logo">GARDEN</h1></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse text-center"
+                id="navbarSupportedContent"
+              >
+                <ul class="Header__NavLinks navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                  <li class="nav-item">
+                    <a class="Header__Link Header__Link1 nav-link active" aria-current="page" href="index.html">Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="Header__Link Header__Link2 nav-link" href="..//NuestrosBotanicos/">Nuestros Botanicos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="Header__Link Header__Link3 nav-link" href="..//Productos/">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="Header__Link Header__Link4 nav-link" href="..//Cocktails//">Cocktails</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="Header__Link Header__Link5 nav-link" href="..//Contacto/">Contacto</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
-    </header>
+          </nav>
+        </header>
     <main>
         <div class="Main__Imagenes">
         </div>
@@ -105,9 +133,8 @@
             <div class="col-md-6 Footer__Redes">
                 <div>
                     <p>CONTACTANOS</p>
+                    <a href="https://www.instagram.com/garden.botanicos/"> <span class="icon-instagram"></span></a></span>
                     <span class="icon-facebook"></span>
-                    <span class="icon-mail"></span>
-                    <span class="icon-instagram"></span>
                 </div>
             </div>
             <div class="col-md-3 Footer__Creator">

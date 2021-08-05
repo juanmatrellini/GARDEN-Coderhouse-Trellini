@@ -14,22 +14,49 @@
     <link rel="stylesheet" href="../Css/style.css">
 </head>
 <body>
-    <header class="Header">
-        <div class="Header__logo">
-            <h1><a class="Header__LogoLink" href="../index.html">GARDEN</a></h1>
-        </div>
-        <nav>
-            <div>
-                <ul class="Header__NavLinks">
-                    <li><a class="Header__Link Header__Link1" href="../index.html">Home</a></li>
-                    <li><a class="Header__Link Header__Link2" href="..//NuestrosBotanicos/">Nuestros Botanicos</a></li>
-                    <li><a class="Header__Link Header__Link3" href="..//Productos/">Productos</a></li>
-                    <li><a class="Header__Link Header__Link4" href="./index.html">Cocktails</a></li>
-                    <li><a class="Header__Link Header__Link5" href="..//Contacto/">Contacto</a></li>
+    <header>
+        <nav
+            class="navbar navbar-expand-lg navbar-dark"          >
+            <div class="container-fluid">
+              <a class="navbar-brand Header__LogoLink"  href="../index.html"
+                ><h1 class="logo">GARDEN</h1></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse text-center"
+                id="navbarSupportedContent"
+              >
+                <ul class="Header__NavLinks navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                  <li class="nav-item">
+                    <a class="Header__Link Header__Link1 nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="Header__Link Header__Link2 nav-link" href="..//NuestrosBotanicos/">Nuestros Botanicos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="Header__Link Header__Link3 nav-link" href="..//Productos/">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="Header__Link Header__Link4 nav-link" href="./index.html">Cocktails</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="Header__Link Header__Link5 nav-link" href="..//Contacto/">Contacto</a>
+                  </li>
                 </ul>
+              </div>
             </div>
-        </nav>
-    </header>
+          </nav>
+        </header>
     <main>
         <section class="Cocktails">
             <div class="Cocktails__Portada cocktails-icon">
@@ -42,7 +69,7 @@
                         <div class="col-md-3 Cocktails__Foto HOLA">
                             <a href="#GIN"><div class="Cocktails_Animacion">
                                 <div class="ver-receta">
-                                    <img src="../Imag/gintonic.jpeg" width="280px" height="500px" alt="">
+                                    <img class="img-fluid" src="../Imag/gintonic.jpeg" width="280px" height="500px" alt="">
                                     <div class="texto-prueba">
                                         <h1>VER <br> RECETA</h1>
                                         <span class="icon-drink"></span>
@@ -56,7 +83,7 @@
                         <div class="col-md-3 Cocktails__Foto HOLA">
                             <a href="#VODKA"><div class="Cocktails_Animacion Cocktails_Animacion2">
                                 <div class="ver-receta">
-                                    <img src="../Imag/vodkafloral.jpg" width="280px" height="500px" alt="">
+                                    <img class="img-fluid" src="../Imag/vodkafloral.jpg" width="280px" height="500px" alt="">
                                     <div class="texto-prueba">
                                         <h1>VER <br> RECETA</h1>
                                         <span class="icon-drink"></span>
@@ -70,7 +97,7 @@
                         <div class="col-md-3 Cocktails__Foto CHAU">
                             <a href="#VERMU"><div class="Cocktails_Animacion">
                                 <div class="ver-receta">
-                                    <img src="../Imag/vermutonic prueba.jpeg" width="280px" height="500px" alt="">
+                                    <img class="img-fluid" src="../Imag/vermutonic prueba.jpeg" width="280px" height="500px" alt="">
                                     <div class="texto-prueba">
                                         <h1>VER <br> RECETA</h1>
                                         <span class="icon-drink"></span>
@@ -84,7 +111,7 @@
                         <div class="col-md-3 Cocktails__Foto CHAU">
                             <a href="#NEGRONI"><div class="Cocktails_Animacion Cocktails_Animacion2">
                                 <div class="ver-receta">
-                                    <img src="../Imag/negroni.jpg" width="280px" height="500px" alt="">
+                                    <img class="img-fluid" src="../Imag/negroni.jpg" alt="">
                                     <div class="texto-prueba">
                                         <h1>VER <br> RECETA</h1>
                                         <span class="icon-drink"></span>
@@ -103,7 +130,7 @@
             <div class="container">
                 <h2>RECETAS</h2>
                 <div class="Recetas__Intro">
-                    <div class="row Recetas__Gin">
+                    <div class="Recipe row Recetas__Gin">
                         <div class="col-md-4">
                             <h3>GIN & TONIC</h3>
                             <p id="VODKA" class="Recetas__Gin_Ing">60ml Gin | 180ml Tónica | Botánicos y cítricos a elección.</p>
@@ -115,7 +142,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row Recetas__Vodka">
+                    <div class="Recipe row Recetas__Vodka">
                         <div class="col-md-4">
                             <h3>VODKA FLORAL</h3>
                             <p id="VERMU" class="Recetas__Vodka_Ing">60ml Vodka | 200ml Tónica | Flores de Hibiscus | Anis estrellado</p>
@@ -124,7 +151,7 @@
                             <p>Enfriar una copa con mucho hielo, colocar una medida grande de vodka utilizando el higger que viene en nuestro box, agregar algunos pétalos de Flor de Hibiscus y remover. Completar con tónica y decorar con una estrella de Anís.</p>
                         </div>
                     </div>
-                    <div class="row Recetas__Vermu">
+                    <div class="Recipe row Recetas__Vermu">
                         <div class="col-md-4">
                             <h3>VERMU TONIC</h3>
                             <p class="Recetas__Vermu_Ing">60ml Vermouth Blanco | Flor de hibiscus | Tónica | Naranja</p>
@@ -133,7 +160,7 @@
                             <p>En primer lugar, colocar hielo en un vaso largo y utilizando el Jigger, añadir una medida grande de Vermouth. Luego agregar Flores de Hibiscus y dejar macerar para que desprenda sus sabores y aromas. Completar con agua tónica y remover suavemente. Finalmente agregar una roda de naranja para decorar.</p>
                         </div>
                     </div>
-                    <div class="row Recetas__Negroni">
+                    <div class="Recipe row Recetas__Negroni">
                         <div id="NEGRONI" class="col-md-4">
                             <h3>NEGRONI</h3>
                             <p class="Recetas__Negroni_Ing">30ml Campari | 30ml Gin | 30ml Vermouth Rosso | Naranja</p>
@@ -149,28 +176,30 @@
             </div>
         </section> 
     </main>
-<footer class="Footer">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="Footer__Data">
-                    <p>Bahía Blanca - CP. 8000</p>
-                    <p>291-99999</p>
+    <footer class="Footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="Footer__Data">
+                        <p>Bahía Blanca - CP. 8000</p>
+                        <p>291-99999</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 Footer__Redes">
-                <div>
-                    <p>NUESTRAS REDES</p>
+                <div class="col-md-6 Footer__Redes">
+                    <div>
+                        <p>CONTACTANOS</p>
+                        <a href="https://www.instagram.com/garden.botanicos/"> <span class="icon-instagram"></span></a></span>
+                    <span class="icon-facebook"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 Footer__Creator">
-                <div>
-                    <p>@2021</p>
-                    <p> Creado por Juan Trellini</p>
+                <div class="col-md-3 Footer__Creator">
+                    <div>
+                        <p>@2021</p>
+                        <p> Creado por Juan Trellini</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>

@@ -25,6 +25,7 @@
     color: #1b272b;
     border-bottom: 2px solid #1b272b;
     font-size: 45px;
+    font-weight: bold;
 }
 .NuestrosProductos h3 {
     font-size: 30px;
@@ -40,4 +41,31 @@
 .NuestrosProductos__Linea {
     padding: 3rem;
 }
- 
+ @media (max-width: 1000px) {
+    .NuestrosProductos__Portada h1 {
+        font-size: 60px;
+    }
+    .NuestrosProductos h2 {
+        font-size: 38px;
+    }
+    .NuestrosProductos h3 {
+        font-size: 25px;
+    }
+ }
+ @media (max-width: 500px) {
+    .NuestrosProductos__Portada h1 {
+        font-size: 50px;
+    }
+    .NuestrosProductos h2 {
+        font-size: 30px;
+    }
+    .NuestrosProductos h3 {
+        font-size: 20px;
+    }
+ }
+ .Productos__box, .Productos__gin, .Productos__acc {
+     max-width: 250px;
+ }
+ .Productos__texto, .Productos__marca, .Productos__tipo {
+     margin-top: 2rem;
+ }

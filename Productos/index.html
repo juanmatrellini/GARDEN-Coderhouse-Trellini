@@ -13,22 +13,49 @@
     <link rel="stylesheet" href="../Css/style.css">
 </head>
 <body>
-    <header class="Header">
-        <div class="Header__logo">
-            <h1><a class="Header__LogoLink" href="../index.html">GARDEN</a></h1>
-        </div>
-        <nav>
-            <div>
-                <ul class="Header__NavLinks">
-                    <li><a class="Header__Link Header__Link1" href="../index.html">Home</a></li>
-                    <li><a class="Header__Link Header__Link2" href="..//NuestrosBotanicos/">Nuestros Botanicos</a></li>
-                    <li><a class="Header__Link Header__Link3" href="./index.html">Productos</a></li>
-                    <li><a class="Header__Link Header__Link4" href="..//Cocktails/">Cocktails</a></li>
-                    <li><a class="Header__Link Header__Link5" href="..//Contacto/">Contacto</a></li>
+    <header>
+        <nav
+            class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand Header__LogoLink"  href="../index.html"
+                ><h1 class="logo">GARDEN</h1></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse text-center"
+                id="navbarSupportedContent"
+              >
+                <ul class="Header__NavLinks navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                  <li class="nav-item">
+                    <a class="Header__Link Header__Link1 nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="Header__Link Header__Link2 nav-link" href="..//NuestrosBotanicos/">Nuestros Botanicos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="Header__Link Header__Link3 nav-link" href="./index.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="Header__Link Header__Link4 nav-link" href="..//Cocktails/">Cocktails</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="Header__Link Header__Link5 nav-link" href="..//Contacto/">Contacto</a>
+                  </li>
                 </ul>
+              </div>
             </div>
-        </nav>
-    </header>
+          </nav>
+        </header>
     <main>
         <section class="NuestrosProductos">
             <div class="NuestrosProductos__Portada productos-icon">
@@ -39,10 +66,12 @@
                     <h2>BOX DE BOTANICOS</h2>
                     <div class="row NuestrosProductos__Linea">
                         <div class="col-md-6">
-                            <h3>SMALL BOX</h3>
+                            <img class="Productos__box img-fluid" src="../Imag/Small abierta.jpeg" alt="">
+                            <h3 class="Productos__texto">SMALL BOX</h3>
                         </div>
                         <div class="col-md-6">
-                            <h3>BIG BOX</h3>
+                            <img class="Productos__box  img-fluid" src="../Imag/Small abierta.jpeg" alt="">
+                            <h3 class="Productos__texto" >BIG BOX</h3>
                         </div>
                     </div>
                 </div>
@@ -50,24 +79,16 @@
                     <h2>GINEBRAS</h2>
                     <div class="row NuestrosProductos__Linea">
                         <div class="col-md-4">
-                        <h3>GIN RESTINGA DUO</h3>
+                            <img class="Productos__marca img-fluid" src="../Imag/jaipur.jpg" alt="">
+                        <h3 class="Productos__gin">GIN JAIPUR</h3>
                         </div>
                         <div class="col-md-4">
-                            <h3>GIN JAIPUR</h3>
+                            <img class="Productos__marca img-fluid" src="../Imag/buenosaires.jpg" alt="">
+                            <h3 class="Productos__gin">GIN BUENOS AIRES</h3>
                         </div>
                         <div class="col-md-4">
-                            <h3>GIN OID MORTALES</h3>
-                        </div>
-                    </div>
-                    <div class="row NuestrosProductos__Linea">
-                        <div class="col-md-4">
-                            <h3>GIN CASA ROSADA</h3>
-                        </div>
-                        <div class="col-md-4">
-                            <h3>GIN BOSQUE</h3>    
-                        </div>
-                        <div class="col-md-4">
-                            <h3>GIN BUENOS AIRES</h3>
+                            <img class="Productos__marca img-fluid" src="../Imag/bosque1.jpg" alt="">
+                            <h3 class="Productos__gin">GIN BOSQUE</h3>
                         </div>
                     </div>
                 </div>
@@ -75,13 +96,16 @@
                     <h2>ACCESORIOS</h2>
                     <div class="row NuestrosProductos__Linea">
                         <div class="col-md-4">
-                            <h3>JIGGER</h3>
+                            <img class="Productos__acc img-fluid" src="../Imag/jigger1.jpg" alt="">
+                            <h3 class="Productos__tipo">JIGGER</h3>
                         </div>
                         <div class="col-md-4">
-                            <h3>COPA</h3>
+                            <img class="Productos__acc img-fluid" src="../Imag/copon gin2.jpg" alt="">
+                            <h3 class="Productos__tipo">COPA</h3>
                         </div>
                         <div class="col-md-4">
-                            <h3>VASO</h3>
+                            <img class="Productos__acc img-fluid" src="../Imag/vaso gin.jpg" alt="">
+                            <h3 class="Productos__tipo">VASO</h3>
                         </div>
                     </div>
                 </div>
@@ -100,9 +124,8 @@
                 <div class="col-md-6 Footer__Redes">
                     <div>
                         <p>CONTACTANOS</p>
-                        <span class="icon-facebook"></span>
-                        <span class="icon-mail"></span>
-                        <span class="icon-instagram"></span>
+                        <a href="https://www.instagram.com/garden.botanicos/"> <span class="icon-instagram"></span></a></span>
+                    <span class="icon-facebook"></span>
                     </div>
                 </div>
                 <div class="col-md-3 Footer__Creator">

@@ -25,15 +25,16 @@
     color: #1b272b;
     border-bottom: 2px solid #1b272b;
     font-size: 45px;
+    font-weight: bold;
 }
 .NuestrosBotanicos h3 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     padding-bottom: 1rem;
     color: #1b272b;
 }
 .NuestrosBotanicos p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: #1b272b;
 }
@@ -62,3 +63,39 @@
     padding: 3rem 3rem 3rem 130px;
 }
 
+@media (max-width: 1000px) {
+    .NuestrosBotanicos__Portada h1 {
+        font-size: 60px;
+    }
+    .NuestrosBotanicos h2 {
+        font-size: 38px;
+    }
+    .NuestrosBotanicos h3 {
+        font-size: 25px;
+    }
+    .NuestrosBotanicos__Linea {
+        padding: 1rem;
+    }
+    .NuestrosBotanicos p {
+        font-size: 17px;
+    }
+}
+@media (max-width: 500px) {
+    .NuestrosBotanicos__Portada h1 {
+        font-size: 50px;
+    }
+    .NuestrosBotanicos h2 {
+        font-size: 30px;
+        border-top: 2px solid #1b272b
+    }
+    .NuestrosBotanicos h3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .Botanicos__Lineas {
+        margin-bottom: 3rem;
+    }
+    .NuestrosBotanicos p {
+        font-size: 16px;
+    }
+}
