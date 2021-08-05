@@ -763,8 +763,13 @@ form h2 {
     font-size: 20px;
   }
 }
-.Productos__box, .Productos__gin, .Productos__acc {
+.Productos__box, .Productos__gin {
   max-width: 250px;
+  margin: auto;
+}
+
+.Productos__acc img {
+  padding: 3rem;
 }
 
 .Productos__texto, .Productos__marca, .Productos__tipo {
